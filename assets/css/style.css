@@ -231,6 +231,10 @@ form {
     float: none;
     display: block;
   }
+  .connect {
+    float: left;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
