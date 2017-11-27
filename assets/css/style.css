@@ -220,6 +220,12 @@ form {
   margin-top: 0;
 }
 
+@media screen and (min-width: 769px) {
+  .leftBox {
+    width: 650px;
+  }
+}
+
 @media screen and (max-width: 980px) and (min-width: 769px) {
   .leftBox img {
     float: none;
