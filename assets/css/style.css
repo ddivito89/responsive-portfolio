@@ -1,27 +1,32 @@
-html{
-  margin:0;
+html {
+  margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
 
-
-body{
+body {
   font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
   margin: 0;
-  width:100%;
+  width: 100vh;
+  height:100%;
   background-image: url("../images/concrete-texture.png");
+  padding: 0;
+}
 
-}
-body h1{
+body h1 {
   font-family: "Georgia", "Times", "Times New Roman", "serif";
 }
-body h2{
+
+body h2 {
   font-family: "Georgia", "Times", "Times New Roman", "serif";
 }
-body h3{
+
+body h3 {
   font-family: "Georgia", "Times", "Times New Roman", "serif";
 }
+
 header {
   background-color: #ffffff;
   color: #777777;
@@ -32,7 +37,6 @@ header {
   border-bottom: 1px solid #dddddd;
   width: 100%;
   height: 80px;
-
 }
 
 .navbar {
@@ -40,26 +44,25 @@ header {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .titleName {
   background-color: #4aaaa5;
 }
 
-.titleName h1  {
+.titleName h1 {
   color: #ffffff;
   text-align: center;
   padding: 0px 16px;
-  height:36px;
-
+  height: 36px;
 }
 
 .titleName li {
   float: left;
 }
 
-.nav li{
+.nav li {
   float: right;
 }
 
@@ -73,13 +76,12 @@ header {
 
 .mainSection {
   width: 100%;
-  height:100%;
+  height: 100%;
   background-image: url("../images/concrete-texture.png");
 }
 
 .mainContent {
   max-width: 960px;
-  height: calc(100vh - 170px);
   min-height: 650px;
   margin-right: auto;
   margin-left: auto;
@@ -88,68 +90,67 @@ header {
 }
 
 .leftBox {
-  margin-top:50px;
+  margin-top: 50px;
   max-width: 650px;
   min-height: 575px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   color: #777777;
   padding: 10px 30px 30px 30px;
-  float:left;
+  float: left;
 }
 
 .leftBoxPort {
-  margin-top:50px;
+  margin-top: 50px;
   max-width: 650px;
-  height: 575px;
+  min-height: 575px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   color: #777777;
   padding: 10px 30px 30px 30px;
-  float:left;
+  float: left;
 }
 
-.leftBox h1{
+.leftBox h1 {
   color: #4aaaa5;
   border-bottom: 2px solid #dddddd;
   height: 60px;
-  margin-bottom:10;
-  display: flex;
-  justify-content: space-between;
-
-}
-.leftBoxPort h1{
-  color: #4aaaa5;
-  border-bottom: 2px solid #dddddd;
-  height: 60px;
-  margin-bottom:10;
+  margin-bottom: 10;
   display: flex;
   justify-content: space-between;
 }
 
-.leftBox img{
-  float:left;
-  padding:0px 20px 0px 0px;
+.leftBoxPort h1 {
+  color: #4aaaa5;
+  border-bottom: 2px solid #dddddd;
+  height: 60px;
+  margin-bottom: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftBox img {
+  float: left;
+  padding: 0px 20px 0px 0px;
   height: 150px;
-  width:200px;
+  width: 200px;
 }
 
 .leftBoxPort img {
   height: 150px;
-  width:294px;
-  padding:10px 10px 10px 10px;
-  float:left;
-
+  width: 294px;
+  padding: 10px 10px 10px 10px;
+  float: left;
 }
 
-.leftBox p{
+.leftBox p {
   line-height: 32px;
   overflow-wrap;
-
 }
+
 .connect {
   padding: 10px 30px 30px 30px;
-  margin-top:50px;
+  margin-top: 50px;
   width: 270px;
   height: 200px;
   float: right;
@@ -157,107 +158,118 @@ header {
   border: 1px solid #dddddd;
   color: #4aaaa5;
   justify-content: space-between;
-
 }
 
-.connect h2{
+.connect h2 {
   color: #4aaaa5;
   border-bottom: 2px solid #dddddd;
-  height:50px;
+  height: 50px;
 }
 
-#links{
+#links {
   display: flex;
   justify-content: space-between;
 }
-.connect img{
+
+.connect img {
   width: 65px;
   height: 65px;
 }
+
 footer {
   background-color: grey;
   color: #ffffff;
   text-align: center;
-  width: 100%;
   height: 90px;
   border-top: 8px solid #4aaaa5;
   line-height: 8;
   font-size: 10px;
+  position:absolute;
+  bottom:0;
+  width:100%;
 }
 
 input {
-    width: 100%;
-    height: 35px;
-    font-size: 16px;
-
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
 }
 
 textarea {
-    width: 100%;
-    height: 200px;
-    font-size: 16px;
-    resize: none;
+  width: 100%;
+  height: 200px;
+  font-size: 16px;
+  resize: none;
 }
 
-button{
+button {
   background-color: #4aaaa5;
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
-label{
+
+label {
   line-height: 2;
 }
 
-form{
+form {
   margin-top: 0;
 }
 
 @media screen and (max-width: 980px) and (min-width: 769px) {
-  .leftBox img{
+  .leftBox img {
     float: none;
     display: block;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
-  .leftBox img{
+  .leftBox img {
     float: none;
     display: block;
   }
-  .leftBox{
+  .leftBox {
     float: none;
     display: block;
   }
-  .leftBoxPort{
+  .leftBoxPort {
     float: none;
     display: block;
   }
-  .connect{
+  .connect {
     float: none;
     display: block;
   }
-
 }
+
 @media screen and (max-width: 640px) and (min-width: 1px) {
-  .leftBox img{
+  .leftBox img {
     float: none;
     display: block;
   }
-  .leftBox{
+  .leftBox {
     float: none;
     display: block;
   }
-  .leftBoxPort{
+  .leftBoxPort {
     float: none;
     display: block;
   }
-  .connect{
+  .connect {
     float: left;
     display: block;
   }
+  .titleName li {
+    float: none;
+  }
+
+  .nav li {
+    float: none;
+    display: inline-block;
+  }
+
 }
