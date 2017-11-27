@@ -1,5 +1,6 @@
 html {
-  margin: 0;
+ height: 100%;
+ margin: 0;
 }
 
 * {
@@ -9,11 +10,10 @@ html {
 body {
   font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
   margin: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/concrete-texture.png");
   padding: 0;
-  height: auto;
 }
 
 body h1 {
@@ -184,9 +184,18 @@ footer {
   border-top: 8px solid #4aaaa5;
   line-height: 8;
   font-size: 10px;
-  position:absolute;
-  bottom:0;
+  float: left;
   width:100%;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -90px;
+}
+.push{
+  height:90px;
 }
 
 input {
@@ -224,6 +233,9 @@ form {
   .leftBox {
     width: 650px;
   }
+  footer{
+    margin-top:25px;
+  }
 }
 
 @media screen and (max-width: 980px) and (min-width: 769px) {
@@ -234,6 +246,9 @@ form {
   .connect {
     float: left;
     display: block;
+  }
+  footer{
+    margin-top:25px;
   }
 }
 
@@ -253,6 +268,9 @@ form {
   .connect {
     float: none;
     display: block;
+  }
+  footer{
+    margin-top:25px;
   }
 }
 
@@ -280,6 +298,9 @@ form {
   .nav li {
     float: none;
     display: inline-block;
+  }
+  footer{
+    margin-top:25px;
   }
 
 }
