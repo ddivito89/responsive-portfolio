@@ -9,6 +9,8 @@ html{
 body{
   font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
   margin: 0;
+  width:100%;
+  background-image: url("../images/concrete-texture.png");
 
 }
 body h1{
@@ -35,7 +37,7 @@ header {
 
 .navbar {
   height: 80px;
-  width: 960px;
+  max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   vertical-align:middle;
@@ -71,11 +73,12 @@ header {
 
 .mainSection {
   width: 100%;
+  height:100%;
   background-image: url("../images/concrete-texture.png");
 }
 
 .mainContent {
-  width: 960px;
+  max-width: 960px;
   height: calc(100vh - 170px);
   min-height: 650px;
   margin-right: auto;
@@ -86,8 +89,8 @@ header {
 
 .leftBox {
   margin-top:50px;
-  width: 650px;
-  height: 575px;
+  max-width: 650px;
+  min-height: 575px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   color: #777777;
@@ -97,7 +100,7 @@ header {
 
 .leftBoxPort {
   margin-top:50px;
-  width: 650px;
+  max-width: 650px;
   height: 575px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -212,4 +215,49 @@ label{
 
 form{
   margin-top: 0;
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+  .leftBox img{
+    float: none;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+  .leftBox img{
+    float: none;
+    display: block;
+  }
+  .leftBox{
+    float: none;
+    display: block;
+  }
+  .leftBoxPort{
+    float: none;
+    display: block;
+  }
+  .connect{
+    float: none;
+    display: block;
+  }
+
+}
+@media screen and (max-width: 640px) and (min-width: 1px) {
+  .leftBox img{
+    float: none;
+    display: block;
+  }
+  .leftBox{
+    float: none;
+    display: block;
+  }
+  .leftBoxPort{
+    float: none;
+    display: block;
+  }
+  .connect{
+    float: left;
+    display: block;
+  }
 }
